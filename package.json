@@ -1,0 +1,21 @@
+{
+  "name": "calendar-project",
+  "version": "1.0.0",
+  "description": "A calendar project to practice date in javascript",
+  "main": "app.js",
+  "scripts": {
+    "serve": "node app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "date",
+    "js"
+  ],
+  "author": "bensonirah",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "handlebars": "^4.7.7"
+  }
+}
