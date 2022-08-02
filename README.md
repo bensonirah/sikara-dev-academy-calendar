@@ -14,7 +14,59 @@ This our first project to practice date in js
 - push your own local repository
 - send your repo link to your coach
 
-# How to install this project
+# How to sync your local repo from your forked repo?
+
+After forking this repo,you have to run the following command in cloned repo folder
+
+```bash
+
+cd <your_cloned_project>
+
+git remote add upstream https://github.com/bensonirah/sikara-dev-academy-calendar.git
+
+```
+
+To ensure that everything work well, enter this command in your terminal again
+
+```bash
+
+git remote -v
+
+```
+
+You will see, a console output with the line contain the upstream url like this:
+
+
+```text
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
+
+Then to get update from the original repo, enter this command
+
+
+```bash
+    git fetch upstream
+```
+
+To ensure that you are in the main branch, type this command
+
+```bash
+git branch
+```
+
+If everything is ok, go ahead and enter this command again
+
+```bash
+git merge upstream/main
+```
+That command will be merge the main branch from the original repo into your main local branch.
+
+
+
+# How to install this project from your forked repo
 
 The first thing you have to do after forked this project is to clone your perso repo
 
